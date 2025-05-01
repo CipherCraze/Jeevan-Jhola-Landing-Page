@@ -75,7 +75,7 @@ const Hero = () => {
             className="mt-12 flex gap-8 text-green-200"
           >
             <div className="pr-8 border-r border-green-400/20">
-              <p className="text-2xl font-bold">500K+</p>
+              <p className="text-2xl font-bold">1.2M+</p>
               <p className="text-sm">Bags Circulated</p>
             </div>
             <div>

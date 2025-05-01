@@ -110,7 +110,7 @@ const HowItWorks = () => {
           <div className="flex justify-center gap-8 text-white">
             <div className="flex items-center gap-2">
               <FaShoppingBag className="text-2xl" />
-              <span className="text-3xl font-bold">12,540</span>
+              <span className="text-3xl font-bold">1,200,540</span>
               <span>Bags Circulating</span>
             </div>
             <div className="flex items-center gap-2">
