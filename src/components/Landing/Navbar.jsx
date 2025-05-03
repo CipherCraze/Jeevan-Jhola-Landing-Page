@@ -10,7 +10,7 @@ const Navbar = () => {
   const links = [
     { name: "The Problem", to: "problem" },
     { name: "Our Solution", to: "solution" },
-    { name: "How It Works", to: "how-it-works" },
+    { name: "How It Works", to: "eco-system" },
     { name: "Get Involved", to: "cta" },
   ]
 

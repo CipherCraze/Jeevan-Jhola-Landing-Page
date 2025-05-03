@@ -58,7 +58,7 @@ const Hero = () => {
               Join the Movement
             </Link>
             <Link
-              to="how-it-works"
+              to="eco-system"
               smooth={true}
               duration={500}
               className="flex items-center border-2 border-white/30 px-8 py-4 rounded-xl font-semibold hover:bg-white/10 hover:border-white/50 transition-all duration-300"

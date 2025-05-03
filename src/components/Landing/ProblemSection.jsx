@@ -1,11 +1,11 @@
 import { motion } from "framer-motion"
-import { FaWater, FaTrash, FaSkullCrossbones } from "react-icons/fa"
+import { FaWater, FaTrash, FaSkullCrossbones, FaLeaf, FaSeedling } from "react-icons/fa"
 
 const ProblemSection = () => {
   const stats = [
-    { icon: <FaTrash />, value: "100B+", label: "Plastic bags used annually" },
-    { icon: <FaWater />, value: "80%", label: "Ocean plastic from land" },
-    { icon: <FaSkullCrossbones />, value: "1M+", label: "Annual animal deaths" }
+    { icon: <FaTrash className="text-teal-600" />, value: "100B+", label: "Plastic bags used annually" },
+    { icon: <FaWater className="text-teal-600" />, value: "80%", label: "Ocean plastic from land" },
+    { icon: <FaLeaf className="text-teal-600" />, value: "1M+", label: "Annual animal deaths" }
   ]
 
   return (
@@ -27,13 +27,13 @@ const ProblemSection = () => {
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
-              className="mb-6 inline-flex items-center bg-red-100 px-6 py-2 rounded-full"
+              className="mb-6 inline-flex items-center bg-amber-100 px-6 py-2 rounded-full"
             >
-              <FaSkullCrossbones className="mr-2 text-red-600" />
-              <span className="text-red-700 font-medium">Environmental Emergency</span>
+              <FaSeedling className="mr-2 text-amber-700" />
+              <span className="text-amber-800 font-medium">Ecosystem Alert</span>
             </motion.div>
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-red-600 to-green-800 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-700 to-green-800 bg-clip-text text-transparent">
               The Plastic Paradox
             </h2>
             
@@ -53,7 +53,7 @@ const ProblemSection = () => {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow"
               >
-                <div className="text-red-500 text-3xl mb-4">{stat.icon}</div>
+                <div className="text-3xl mb-4">{stat.icon}</div>
                 <div className="text-4xl font-bold text-gray-800 mb-2">{stat.value}</div>
                 <div className="text-gray-600">{stat.label}</div>
               </motion.div>
@@ -64,10 +64,10 @@ const ProblemSection = () => {
           <motion.div
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            className="bg-red-50/50 backdrop-blur-sm rounded-2xl p-8 border-l-4 border-red-600"
+            className="bg-teal-50/60 backdrop-blur-sm rounded-2xl p-8 border-l-4 border-teal-600"
           >
             <div className="flex items-start mb-4">
-              <div className="bg-red-600 text-white p-3 rounded-lg mr-4">
+              <div className="bg-teal-600 text-white p-3 rounded-lg mr-4">
                 <FaSkullCrossbones className="text-xl" />
               </div>
               <div>
@@ -79,16 +79,16 @@ const ProblemSection = () => {
               </div>
             </div>
             
-            <div className="flex items-center text-red-600">
-              <div className="flex-1 border-t-2 border-dashed border-red-200"></div>
+            <div className="flex items-center text-teal-600">
+              <div className="flex-1 border-t-2 border-dashed border-teal-200"></div>
               <span className="mx-4 font-medium">Meanwhile...</span>
-              <div className="flex-1 border-t-2 border-dashed border-red-200"></div>
+              <div className="flex-1 border-t-2 border-dashed border-teal-200"></div>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
               {['Wildlife suffers', 'Crops absorb toxins', 'Water contaminated', 'Human health risks'].map((item, i) => (
-                <div key={i} className="flex items-center text-sm text-red-700">
-                  <span className="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
+                <div key={i} className="flex items-center text-sm text-teal-700">
+                  <span className="w-2 h-2 bg-teal-600 rounded-full mr-2"></span>
                   {item}
                 </div>
               ))}

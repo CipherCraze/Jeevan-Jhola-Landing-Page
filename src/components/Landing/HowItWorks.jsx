@@ -102,24 +102,7 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        {/* Eco Impact Counter */}
-        <div className="mt-16 p-8 bg-emerald-600 rounded-2xl text-center shadow-lg">
-          <h3 className="text-2xl font-bold text-white mb-4">
-            Collective Impact 🌱
-          </h3>
-          <div className="flex justify-center gap-8 text-white">
-            <div className="flex items-center gap-2">
-              <FaShoppingBag className="text-2xl" />
-              <span className="text-3xl font-bold">1,200,540</span>
-              <span>Bags Circulating</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <FaRecycle className="text-2xl" />
-              <span className="text-3xl font-bold">3.2T</span>
-              <span>Plastic Saved</span>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   )
