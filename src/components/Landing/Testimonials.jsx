@@ -22,7 +22,7 @@ const Testimonials = () => {
   ]
 
   return (
-    <section className="py-24 bg-gradient-to-b from-emerald-900 to-emerald-950 relative overflow-hidden">
+    <section id="testimonials" className="py-24 bg-gradient-to-b from-emerald-900 to-emerald-950 relative overflow-hidden">
       {/* Floating leaves background */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(8)].map((_, i) => (

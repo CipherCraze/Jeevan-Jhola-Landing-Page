@@ -11,6 +11,8 @@ const Navbar = () => {
     { name: "The Problem", to: "problem" },
     { name: "Our Solution", to: "solution" },
     { name: "How It Works", to: "eco-system" },
+    { name: "Testimonials", to: "testimonials" },
+    { name: "FAQ", to: "faq" },
     { name: "Get Involved", to: "cta" },
   ]
 
